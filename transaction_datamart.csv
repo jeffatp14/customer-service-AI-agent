@@ -1,0 +1,57 @@
+transaction_id,product_name,customer_name,customer_email,transaction_date,transaction_amount,transaction_status,product_category,stock_quantity
+5,Silicone Stretch Lids,Mitchell Candy,mcandy4@epa.gov,2/1/2020,2501.76,refunded,Kitchen,5
+6,Portable Air Purifier,Dena Van Brug,dvan5@yolasite.com,12/14/2022,478.76,pending,Health,0
+7,Pet Travel Backpack Carrier,Zack Dear,zdear6@time.com,12/30/2021,9972.18,completed,Pets,158
+8,Coffee Grinder,Amandie Gaffon,agaffon7@lycos.com,4/1/2021,6953.18,refunded,Kitchen,363
+9,Children's Educational Puzzle,Bar Dorber,bdorber8@answers.com,2/17/2022,9703.34,refunded,Toys,41
+10,Kids' Art Supplies Kit,Issie Baggs,ibaggs9@alexa.com,2/8/2022,8872.06,pending,Toys,98
+11,Collapsible Water Bottle,Nathan Matuska,nmatuskaa@imgur.com,4/25/2022,7727.7,pending,Fitness,778
+12,Aged White Cheddar Popcorn,Catha Figg,cfiggb@geocities.com,5/19/2020,5081.48,refunded,Food - Snacks,485
+13,Almond Flour,Drugi Asbury,dasburyc@apache.org,12/22/2022,5908.51,refunded,Food - Baking,437
+14,Compact Hair Dryer,Adam Beddows,abeddowsd@miitbeian.gov.cn,7/7/2021,3837.63,refunded,Beauty,686
+15,Fitness Jump Rope with LCD Counter,Florry Balint,fbalinte@patch.com,9/4/2021,4239.2,completed,Fitness,88
+16,Handcrafted Wooden Jewelry Box,Kattie Wreiford,kwreifordf@addthis.com,11/15/2020,4266.6,refunded,Accessories,3
+17,Roasted Red Pepper Sauce,Gertrude Coghill,gcoghillg@exblog.jp,12/4/2022,5872.65,completed,Food - Sauces,184
+18,Compact Portable Grill,Lexie Earle,learleh@howstuffworks.com,2/20/2020,98.4,completed,Outdoor,172
+19,Bock Beer Mustard,Tann Hulatt,thulatti@macromedia.com,9/10/2022,3917.71,pending,Food - Condiments,496
+20,Whole Chicken,Kelcey Cosgriff,kcosgriffj@bloomberg.com,2/10/2020,6507.3,completed,Food - Meat,822
+21,Wooden Toy Train Set,Clareta Blankhorn,cblankhornk@mapy.cz,11/24/2020,5210.58,pending,Toys,482
+22,Gaming Headset,Erda Revie,ereviel@mozilla.org,7/8/2022,1931.55,refunded,Gaming,160
+23,Basil Pesto Pasta,Marjy Quested,mquestedm@tinyurl.com,11/28/2021,7353.56,refunded,Food - Prepared Meals,378
+24,Compressible Packing Cubes,Rooney Calrow,rcalrown@ask.com,4/13/2020,2400.14,pending,Travel,738
+25,Kid's Fruit Snacks,Zita Triggs,ztriggso@businessweek.com,12/10/2020,6212.44,refunded,Food - Snacks,869
+26,Luxury Memory Foam Mattress Topper,Jaclyn Prestidge,jprestidgep@phoca.cz,3/25/2020,3034.14,pending,Home,11
+27,Coconut Milk,Viv Meece,vmeeceq@senate.gov,7/14/2020,1885.39,pending,Food - Canned Goods,72
+28,Quinoa,Scotty Inkpen,sinkpenr@army.mil,2/20/2021,6193.34,pending,Food - Grains,477
+29,Stainless Steel BBQ Grill Set,Auberta Wandrich,awandrichs@fotki.com,5/20/2022,286.04,pending,Outdoor,676
+30,Chicken Sausage,Adelind Flay,aflayt@comsenz.com,9/13/2021,9707.4,pending,Food - Meat,223
+31,Non-Stick Baking Sheets,Jefferey Dinnage,jdinnageu@nasa.gov,4/11/2022,6862.74,pending,Kitchen,577
+32,Herbal Garden Starter Kit,Aube Brockway,abrockwayv@latimes.com,3/15/2022,4367.75,pending,Garden,670
+33,Fitness Resistance Bands Kit,Cherin Freckingham,cfreckinghamw@hatena.ne.jp,3/15/2021,3275.16,pending,Fitness,309
+34,Mini Air Purifier,Alex Fitkin,afitkinx@cbslocal.com,8/21/2022,8796.1,completed,Health,624
+35,Organic Coconut Sugar,Gretchen Osipov,gosipovy@csmonitor.com,9/30/2021,3077.89,refunded,Food - Baking Goods,110
+36,Kids' Crafting Station,Keelby Greatbank,kgreatbankz@shutterfly.com,6/15/2021,8571.26,pending,Toys,840
+37,Silicone Baking Molds,Bartolemo Walkingshaw,bwalkingshaw10@deviantart.com,4/4/2020,4599.62,refunded,Kitchen,173
+38,Portable Blender,Dacey Malthouse,dmalthouse11@engadget.com,12/13/2020,3546.96,completed,Kitchen,598
+39,Electric Egg Cooker,Marty Corkitt,mcorkitt12@purevolume.com,6/9/2021,8627.38,completed,Kitchen,955
+40,Himalayan Pink Salt,Bidget Daintrey,bdaintrey13@live.com,12/23/2020,9668.21,refunded,Food - Condiments,305
+41,Brazil Nuts,Denis Ferenczy,dferenczy14@cdc.gov,4/12/2022,5546.05,pending,Food - Nuts,451
+42,Non-Slip Yoga Socks,Rowney Birdsall,rbirdsall15@opera.com,10/25/2022,428.87,completed,Fitness,719
+43,Eco-Friendly Yoga Mat,Yasmeen Calvert,ycalvert16@ft.com,9/5/2020,4858.45,refunded,Fitness,0
+44,Self-Inflating Camping Mattress,Carce Wilhelmy,cwilhelmy17@home.pl,9/20/2022,6024.66,refunded,Outdoor,21
+60,Maple Cinnamon Granola Bars,Dyane Keates,dkeates1n@cnn.com,12/6/2020,5921.89,completed,Food - Snacks,809
+61,Spinach Feta Wraps,Heddie Wapple,hwapple1o@wikispaces.com,2/5/2021,8763.52,pending,Food - Deli,989
+62,Pineapple Coconut Yogurt,Nancey Fawdrie,nfawdrie1p@issuu.com,3/14/2022,5996.71,completed,Food - Dairy,415
+68,Magnetic Phone Car Mount,Nessie Baribal,nbaribal1v@redcross.org,11/11/2020,2465.33,completed,Automotive,899
+69,Smart WiFi Plug,Trenna Caudray,tcaudray1w@columbia.edu,6/1/2021,9805.78,pending,Smart Home,14
+70,Tortilla Chips,Benji Hawkshaw,bhawkshaw1x@geocities.com,1/30/2020,7792.71,refunded,Food - Snacks,582
+71,Cheesy Broccoli Soup Mix,Seth Demaid,sdemaid1y@dell.com,1/12/2021,4873.06,pending,Food - Soups,566
+72,Sea Salt Caramel Popcorn,Lorain Tarborn,ltarborn1z@blogspot.com,6/8/2022,9545.75,refunded,Food - Snacks,753
+76,Pepper Jack Cheese Sticks,Esta Cheesman,echeesman23@hostgator.com,7/6/2022,966.25,refunded,Food - Snacks,0
+80,Silicone Stretch Lids,Fran Morison,fmorison27@blogger.com,10/12/2021,9203.91,completed,Kitchen,778
+81,Sushi Roll Kit,Eugine Cuffley,ecuffley28@pcworld.com,3/31/2022,8715.46,refunded,Food - Cooking Kits,175
+82,Organic Fruit Salad,Gisela Oxshott,goxshott29@skyrock.com,4/22/2022,248.19,completed,Food - Produce,0
+87,Skincare Fridge,Lamond Rounsivall,lrounsivall2e@dyndns.org,12/17/2021,605.8,pending,Beauty,63
+88,Organic Ramen Noodles,Wiley De La Haye,wde2f@mlb.com,8/18/2022,4422.21,pending,Food - Pasta,199
+89,Honey BBQ Riblets,Waldemar Farthing,wfarthing2g@wsj.com,7/7/2020,4967.34,pending,Food - Meat,295
+90,Chickpeas,Steffi Hanretty,shanretty2h@nationalgeographic.com,10/5/2020,7312.49,pending,Food - Canned Goods,0

@@ -1,0 +1,6 @@
+timestamp,confidence,user_message,assistant_response,status
+2025-10-13 18:10:28,0.5,"Hi, my name is Jeffa do you have my transaction details?","Hello Jeffa, I'm happy to help you with your transaction details. According to our records, I don't have any transactions associated with the customer name Jeffa. Could you please confirm if you meant to say Zack Dear or perhaps it's actually Jeffa? If neither of those are correct, please let me know and I'll do my best to assist you.
+
+Also, just to clarify, we have two active transaction IDs in our system: 7 for the Pet Travel Backpack Carrier with Zack Dear as the customer, and 31 for the Non-Stick Baking Sheets with Jefferey Dinnage as the customer. The status of each transaction is also available - ID 7 has a completed status, while ID 31 is pending.
+
+If you could provide more information or confirm your identity, I'll be happy to assist you further.",Needs Review
