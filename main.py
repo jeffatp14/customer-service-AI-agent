@@ -1,52 +1,55 @@
 import ollama
+import streamlit as st
 from src.data_handler import retriever
 from src.escalation import analyze_confidence, log_escalation
 
-convo = []
+st.title("Lume & Co Customer Support Agent")
 
-system_prompt = """
-You are a customer service agent for "Lume & Co", a small online retailer. 
-You help customers with orders, transactions, and product inquiries. 
-Always use the provided data when relevant.
+if "messages" not in st.session_state:
+    st.session_state.messages = []
 
-You may assist them for any store policies regarding our transaction and product.
+# Add system prompt once (only if not already added)
+if not any(msg["role"] == "system" for msg in st.session_state.messages):
+    system_prompt = """
+    You are a customer support agent for "Lume & Co", a small online retailer. 
+    You help customers with orders, transactions, and product inquiries. 
+    Keep your responses CONCISE & TO THE POINT
+    Always use the provided data when relevant. 
+    
+    You must NEVER ASSUME any personal data (like customer name, transaction ID, or product) unless it is explicitly provided by the user or appears in the retrieved company data.
+    If the user just greets (e.g. "hi", "hello"), respond with a polite greeting only.
+    Do not reference any order, transaction, or product unless asked directly.
+    
+    You may assist them for any store policies regarding our transaction and product.
 
-If you're unsure or data seems incomplete, express uncertainty politely,
-then log the chat and escalate to human service agent.
-"""
+    If you're unsure or data seems incomplete, express uncertainty politely,
+    then log the chat and escalate to human service agent.
+    """
+    st.session_state.messages.append({"role": "assistant", "content": system_prompt})
 
-
-convo.append({"role": "system", "content": system_prompt})
-
-
-print("\nLume & Co Customer Service Center\n")
-
-while True:
-    question = input("User type here (D for Done): ")
-    if question.strip().lower() == "d":
-        print("Thank you for contacting us")
-        break
-
-
+question = st.chat_input("How can I help you?")
+if question:
+    with st.chat_message("user"):
+        st.markdown(question)
     docs = retriever.invoke(question)
     data = "\n".join([doc.page_content for doc in docs])
 
 
-    convo.append({
+    st.session_state.messages.append({
         "role": "user",
         "content": f"Question: {question}\n\nRelevant company data:\n{data}"
     })
-
-
-    output = ollama.chat(model="llama3.2", messages=convo)
-    response = output["message"]["content"]
-    confidence = analyze_confidence(response)
+    with st.chat_message("assistant"):
+        message_placeholder = st.empty()
+        output = ollama.chat(model="llama3.2", messages=st.session_state.messages)
+        response = output["message"]["content"]
+        confidence = analyze_confidence(response)
 
     if confidence < 0.6:
         log_escalation(question, response,  confidence)
-
-    print(f"\nAssistant:\n{response}\n")
-    convo.append({"role": "assistant", "content": response})
+    message_placeholder.markdown(response)
+    # print(f"\nAssistant:\n{response}\n")
+    st.session_state.messages.append({"role": "assistant", "content": response})
 
 # from langchain_ollama.llms import OllamaLLM
 # from langchain_core.prompts import ChatPromptTemplate

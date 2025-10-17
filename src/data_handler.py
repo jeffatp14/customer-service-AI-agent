@@ -6,7 +6,12 @@ import pandas as pd
 from pathlib import Path
 
 
-df_transaction = pd.read_csv("../transaction_datamart.csv")
+from pathlib import Path
+
+BASE_DIR = Path(__file__).resolve().parent  # points to src/
+csv_path = BASE_DIR.parent / "transaction_datamart.csv"
+df_transaction = pd.read_csv(csv_path)
+
 embeddings = OllamaEmbeddings(model="mxbai-embed-large")
 db_loc = str(Path(__file__).parent / "chrome_langchain_db")
 add_documents = not os.path.exists(db_loc)
